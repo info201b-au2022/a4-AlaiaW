@@ -1,6 +1,6 @@
 ---
-title: "Your A4 Report Title (TODO: Revise title)"
-author: "Your Name"
+title: "Title"
+author: "Yingxuan Wang"
 date: '2022-11-01'
 output: html_document
 ---
@@ -32,14 +32,42 @@ num <- 5
 sum <- sum(test_query2(num))
 print(sum)
 ```
+## Abstract
+The primary research focus of this report is on the inequities of incarceration in the United States. This issue is important because many people encounter a lot of unfair treatment after incarceration, which greatly affects their normal life. To address this issue, I conducted a study using data from the Vera Institute, and used code to analyze and calculate it.
 
 ## Introduction 
-[TODO]
+In this presentation, I examine the phenomenon of incarceration inequality in the United States. I looked at data on incarceration in the United States through the Vera Institute's dataset, Trends in Incarceration. The Vera Institute is an organization dedicated to fighting injustice in the criminal justice system, and we're looking at this aspect of inequality as well. The total prison population is one percent of the actual population, a number that is 3 quite staggering, and the state with the largest prison population is California. Everyone who goes to prison has this stain on their life, and this stain affects many aspects of life. Incarceration affects not only the person incarcerated, but also those around them for the rest of their lives. And this dataset helps us understand what difficulties and inequalities these people encounter in their lives, and what we can do to change that. Similar to feminism, this is actually not just about people who have been in prison actually, it also includes sexism, racism, etc. Different genders and different races are discriminated against to different degrees.
 
 ## Data Summary 
-[TODO]
+```{r, echo=FALSE}
+white_percentage_1988
+avg_1988_female_jail_pop
+black_percentage_1988
+```
+In Section 2, I focused on my data survey and research in 1988. These are the percentages of whites and blacks in the 1988 incarceration rate, and the average number of women in prison in 1988, respectively. We can compare the data for whites and blacks and see the differences in the resulting data.
 
-[TODO ... other sections ... See Canvas for details]
+## Section 3: Total jail population per year
+```{r message=FALSE, warning=FALSE, error=FALSE, echo=TRUE}
+plot_jail_pop_for_us()
+```
+In this chart we can see the number of people in prison in the United States from 1970 to 2018, and we can clearly see the growth in numbers for each year. From 1970 to 1979, the U.S. prison population remained at a plateau, with almost similar numbers each year. However, beginning in 1980, the U.S. prison population experienced a dramatic increase with no downward trend. The reason for this situation became the biggest question as to why the number of prison population started to explode.
 
-_All the very best with your work!_
+## Section 4: Growth of Jail Population by State
+```{r message=FALSE, warning=FALSE, echo=TRUE}
+plot_jail_pop_by_states()
+```
+This chart presents the growth of the U.S. prison population in the states of Washington, Florida, California and New York. From the data in the chart we can see that California is largely ahead of the other weeks in terms of prison population, with Washington being relatively low among several states. And it is interesting to note from the data that from 1970 to 1979, the number of incarcerated people in California was in a flat state, but from 1980 onwards the number also rose sharply.
+
+## Section 5: Variable Comparison that Reveals Potential Patterns of Inequality
+```{r echo=FALSE, eval=TRUE}
+plot_white_pop_by_states()
+```
+This chart shows the white prison population in each state, and we can see from the data that the white incarceration population is on the rise regardless of the state. California, in particular, saw a dramatic increase in numbers around 1985. Florida has also experienced a dramatic increase in numbers, peaking at some point and surpassing 3,000.
+
+## Section 6: Map of Feamle Population Ratio in each State
+```{r echo=FALSE}
+plot_female_value()
+```
+This map shows the percentage of the female incarceration population in each state. In the map we can see that the South and East of the United States have a significantly larger percentage than the rest of the country, while the North has a smaller percentage of female incarcerated population and is more pink in color. This leads us to ask why the female prison population in these areas is significantly higher than in other areas. Is it because of unfair treatment in prisons or because of gender-race discrimination, or are there other reasons? These questions hint at various injustices.
+
 
