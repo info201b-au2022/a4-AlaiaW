@@ -10,8 +10,8 @@ source("../source/a4-helpers.R")
 source("../source/analysis.R")
 ```
 
-## Abstract 
-[TODO: Include a short abstract (about 50 words)]
+## Abstract
+The primary research focus of this report is on the inequities of incarceration in the United States. This issue is important because many people encounter a lot of unfair treatment after incarceration, which greatly affects their normal life. To address this issue, I conducted a study using data from the Vera Institute, and used code to analyze and calculate it.
 
 # Test (TODO: Remove before submission!!)
 ```{r echo=FALSE}
@@ -32,8 +32,6 @@ num <- 5
 sum <- sum(test_query2(num))
 print(sum)
 ```
-## Abstract
-The primary research focus of this report is on the inequities of incarceration in the United States. This issue is important because many people encounter a lot of unfair treatment after incarceration, which greatly affects their normal life. To address this issue, I conducted a study using data from the Vera Institute, and used code to analyze and calculate it.
 
 ## Introduction 
 In this presentation, I examine the phenomenon of incarceration inequality in the United States. I looked at data on incarceration in the United States through the Vera Institute's dataset, Trends in Incarceration. The Vera Institute is an organization dedicated to fighting injustice in the criminal justice system, and we're looking at this aspect of inequality as well. The total prison population is one percent of the actual population, a number that is 3 quite staggering, and the state with the largest prison population is California. Everyone who goes to prison has this stain on their life, and this stain affects many aspects of life. Incarceration affects not only the person incarcerated, but also those around them for the rest of their lives. And this dataset helps us understand what difficulties and inequalities these people encounter in their lives, and what we can do to change that. Similar to feminism, this is actually not just about people who have been in prison actually, it also includes sexism, racism, etc. Different genders and different races are discriminated against to different degrees.
